@@ -1,0 +1,284 @@
+{
+  "id": "815133e7-e8fd-43c3-b94e-88992bf6e65e",
+  "version": "2.0",
+  "name": "FunctionalTestsRambler.ru",
+  "url": "https://www.rambler.ru",
+  "tests": [{
+    "id": "e36f0e9f-7051-48b2-bf12-9bf012952f41",
+    "name": "SearchGoroskopeDeva",
+    "commands": [{
+      "id": "7efb45ab-36c9-4c05-925e-9527b554ffc5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6b06a3c-41fe-4326-bec2-5fd92ed03d92",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "525x820",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "731e6bfa-8bc6-455c-8f7c-06592cf214a5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Гороскопы",
+      "targets": [
+        ["linkText=Гороскопы", "linkText"],
+        ["css=.fekap", "css:finder"],
+        ["xpath=//a[contains(text(),'Гороскопы')]", "xpath:link"],
+        ["xpath=//main[@id='main']/div/div/div/div/div/div/div[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://horoscopes.rambler.ru/?utm_source=head&utm_campaign=self_promo&utm_medium=topline&utm_content=horoscopes')]", "xpath:href"],
+        ["xpath=//div[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Гороскопы')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9204",
+      "windowTimeout": 2000
+    }, {
+      "id": "5589d1f7-0dd8-4971-9eff-d3f00fa664fa",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9204}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "877197b2-399d-44d2-88e7-849854089338",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1.600000023841858)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3b67268-c15b-4a38-99d0-178d28ca8cf8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jdca",
+      "targets": [
+        ["css=.jdca", "css:finder"],
+        ["xpath=//div[@id='app']/main/div[4]/div/nav/div/div/a[7]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/virgo/')]", "xpath:href"],
+        ["xpath=//nav/div/div/a[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eae88bc5-df79-4963-961f-2dc758ffc31e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48f8ab24-303c-4d2d-af06-1f23569b0b0e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.niXJ",
+      "targets": [
+        ["css=.niXJ", "css:finder"],
+        ["xpath=//div[@id='app']/main/div[4]/div/div/section/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Дева — гороскоп на сегодня')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "13455039-4951-4f45-8b9e-a6e0e95a61bc",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.\\_2Lfl",
+      "targets": [
+        ["css=.\\_2Lfl", "css:finder"],
+        ["xpath=//div[@id='app']/main/div[4]/div/div/section/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//section/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": "Общий гороскоп на сегодня для Девы расскажет о том, что нас ожидает в течение дня"
+    }]
+  }, {
+    "id": "604e9137-b676-4bb9-9ab2-a84d96134171",
+    "name": "SearchGoroscope2021Deva",
+    "commands": [{
+      "id": "1e38f249-f583-4f62-8a9a-164263f8226d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c56be0e2-6063-4be1-8ae9-67ff1740af9c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "525x820",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "caabe3a6-7b32-4809-b1eb-bf751a2bf3ff",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Гороскопы",
+      "targets": [
+        ["linkText=Гороскопы", "linkText"],
+        ["css=.rui__GYYwK:nth-child(6) > .rui__3otde", "css:finder"],
+        ["xpath=//a[contains(text(),'Гороскопы')]", "xpath:link"],
+        ["xpath=//main[@id='main']/div/div/div/div/div/div/div[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://horoscopes.rambler.ru/?utm_source=head&utm_campaign=self_promo&utm_medium=topline&utm_content=horoscopes')]", "xpath:href"],
+        ["xpath=//div[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Гороскопы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aff6ab79-69f4-4d4d-9bb4-e47c380873dd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Гороскопы",
+      "targets": [
+        ["linkText=Гороскопы", "linkText"],
+        ["css=.rui__GYYwK:nth-child(6) > .rui__3otde", "css:finder"],
+        ["xpath=//a[contains(text(),'Гороскопы')]", "xpath:link"],
+        ["xpath=//main[@id='main']/div/div/div/div/div/div/div[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://horoscopes.rambler.ru/?utm_source=head&utm_campaign=self_promo&utm_medium=topline&utm_content=horoscopes')]", "xpath:href"],
+        ["xpath=//div[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Гороскопы')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9136",
+      "windowTimeout": 2000
+    }, {
+      "id": "a63f5b9f-6c85-497c-8a26-24a361fb301a",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Гороскопы",
+      "targets": [
+        ["linkText=Гороскопы", "linkText"],
+        ["css=.rui__GYYwK:nth-child(6) > .rui__3otde", "css:finder"],
+        ["xpath=//a[contains(text(),'Гороскопы')]", "xpath:link"],
+        ["xpath=//main[@id='main']/div/div/div/div/div/div/div[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://horoscopes.rambler.ru/?utm_source=head&utm_campaign=self_promo&utm_medium=topline&utm_content=horoscopes')]", "xpath:href"],
+        ["xpath=//div[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Гороскопы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24e2158e-ed13-4019-b83f-21f8a65baa6d",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9136}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42b82702-0dde-4c3f-86da-ecc1e7a0e674",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c038b98f-63b8-4c62-b2b1-1d2bcc7bfb75",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Лунный календарь",
+      "targets": [
+        ["linkText=Лунный календарь", "linkText"],
+        ["css=.ehdxb", "css:finder"],
+        ["xpath=//a[contains(text(),'Лунный календарь')]", "xpath:link"],
+        ["xpath=//div[@id='app']/main/header/div/div[3]/a[7]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/moon/calendar/')]", "xpath:href"],
+        ["xpath=//a[7]", "xpath:position"],
+        ["xpath=//a[contains(.,'Лунный календарь')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "db0ac583-b2e7-421a-814e-383feee69631",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Лунный календарь",
+      "targets": [
+        ["linkText=Лунный календарь", "linkText"],
+        ["css=.ehdxb", "css:finder"],
+        ["xpath=//a[contains(text(),'Лунный календарь')]", "xpath:link"],
+        ["xpath=//div[@id='app']/main/header/div/div[3]/a[7]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/moon/calendar/')]", "xpath:href"],
+        ["xpath=//a[7]", "xpath:position"],
+        ["xpath=//a[contains(.,'Лунный календарь')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4bcf5d03-dccc-43ca-9c9c-12254318d14f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tdyeei",
+      "targets": [
+        ["css=.tdyeei", "css:finder"],
+        ["xpath=//div[@id='app']/main/div[4]/div/nav/div/div/a[7]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/virgo/')]", "xpath:href"],
+        ["xpath=//nav/div/div/a[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee554389-499c-462b-8037-099acf3430b0",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6aee2585-9ee6-4eda-8c96-cf6abbcada2c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=2021",
+      "targets": [
+        ["linkText=2021", "linkText"],
+        ["css=.\\_1KEx:nth-child(1) .\\_1lNi:nth-child(9)", "css:finder"],
+        ["xpath=//a[contains(text(),'2021')]", "xpath:link"],
+        ["xpath=//div[@id='app']/main/div[4]/div/div/section/div/div/a[9]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/virgo/2021/')]", "xpath:href"],
+        ["xpath=//section/div/div/a[9]", "xpath:position"],
+        ["xpath=//a[contains(.,'2021')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "991e6766-7662-4ad4-acdd-aaf9300ac27e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.niXJ",
+      "targets": [
+        ["css=.niXJ", "css:finder"],
+        ["xpath=//div[@id='app']/main/div[4]/div/div/section/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Дева — гороскоп на 2021 год')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7486d069-c71c-4e59-8540-9d0fd7437ca5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.niXJ",
+      "targets": [
+        ["css=.niXJ", "css:finder"],
+        ["xpath=//div[@id='app']/main/div[4]/div/div/section/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Дева — гороскоп на 2021 год')]", "xpath:innerText"]
+      ],
+      "value": "Дева — гороскоп на 2021 год"
+    }]
+  }],
+  "suites": [{
+    "id": "55cd36a3-0c4f-4aab-8513-2af1675269a3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e36f0e9f-7051-48b2-bf12-9bf012952f41", "604e9137-b676-4bb9-9ab2-a84d96134171"]
+  }, {
+    "id": "454ed0e5-7f0e-49ba-b3cf-5c297e90e488",
+    "name": "RamblerGoroscopeRandomTestFunc",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["604e9137-b676-4bb9-9ab2-a84d96134171", "e36f0e9f-7051-48b2-bf12-9bf012952f41"]
+  }],
+  "urls": ["https://www.rambler.ru/"],
+  "plugins": []
+}

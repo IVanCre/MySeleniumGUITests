@@ -1,0 +1,345 @@
+{
+  "id": "b0774893-de7a-4db7-85ab-8c8672a2a642",
+  "version": "2.0",
+  "name": "tesera.ruSeachFunc",
+  "url": "https://tesera.ru/",
+  "tests": [{
+    "id": "ca98c28c-bc63-4daa-bb34-60357ec4a3c4",
+    "name": "AcceptSearhGame",
+    "commands": [{
+      "id": "be88baad-b55c-412c-b6e7-e4d11c855922",
+      "comment": "",
+      "command": "open",
+      "target": "https://tesera.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "024a1fee-a1e9-4535-b47f-8b1d14e00705",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "834x823",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9d1a005-944c-4d50-8f48-a142fd12600a",
+      "comment": "",
+      "command": "type",
+      "target": "id=search_query",
+      "targets": [
+        ["id=search_query", "id"],
+        ["name=q", "name"],
+        ["css=#search_query", "css:finder"],
+        ["xpath=//input[@id='search_query']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div[2]/div/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form/input", "xpath:position"]
+      ],
+      "value": "gloomh"
+    }, {
+      "id": "398abdb5-3e39-45d7-9688-d33e7992707a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gloomhaven. Мрачная Гавань",
+      "targets": [
+        ["linkText=Gloomhaven. Мрачная Гавань", "linkText"],
+        ["css=.ac_over .title > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gloomhaven. Мрачная Гавань')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/game/gloomhaven/')])[2]", "xpath:href"],
+        ["xpath=//li/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gloomhaven. Мрачная Гавань')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a238b4bc-fd42-485e-b51d-84710b06beac",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#game_title > span",
+      "targets": [
+        ["css=#game_title > span", "css:finder"],
+        ["xpath=//h1[@id='game_title']/span", "xpath:idRelative"],
+        ["xpath=//h1/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Gloomhaven. Мрачная Гавань')]", "xpath:innerText"]
+      ],
+      "value": "Gloomhaven. Мрачная Гавань"
+    }, {
+      "id": "33196b28-1f38-4ea3-8291-069be74b1d2c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3ee1dd8b-c0ac-4ff0-a4b2-88ede46e203a",
+    "name": "FailedSearchGame",
+    "commands": [{
+      "id": "fda928dc-5f1f-4f65-a225-aabc85f1d2ee",
+      "comment": "",
+      "command": "open",
+      "target": "https://tesera.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6b39152-31b4-4288-84b5-787d37b9a9b0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "525x823",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f2ba573-7b2e-407a-b548-a9de42395373",
+      "comment": "",
+      "command": "type",
+      "target": "id=search_query",
+      "targets": [
+        ["id=search_query", "id"],
+        ["name=q", "name"],
+        ["css=#search_query", "css:finder"],
+        ["xpath=//input[@id='search_query']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div[2]/div/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form/input", "xpath:position"]
+      ],
+      "value": "butman"
+    }, {
+      "id": "83442747-b0fe-4b97-b392-c6961be7921a",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=search_query",
+      "targets": [
+        ["id=search_query", "id"],
+        ["name=q", "name"],
+        ["css=#search_query", "css:finder"],
+        ["xpath=//input[@id='search_query']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div[2]/div/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "67720cee-5332-4c38-b949-b47d92a0db9a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h4",
+      "targets": [],
+      "value": "Измените поисковый запрос\\nили воспользуйтесь рубрикатором"
+    }, {
+      "id": "083d99f1-58f4-4127-a03f-29b0051b7073",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0a08d9d1-0f84-4622-a144-1bfa81fcb1c9",
+    "name": "SearchResultEditable",
+    "commands": [{
+      "id": "cc0216f9-24db-480b-a5dc-961c0bf54ae0",
+      "comment": "",
+      "command": "open",
+      "target": "https://tesera.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "493385e2-6c46-40b5-bd12-209b03986d0f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "525x822",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd7986e3-b375-472d-b252-a11db0871452",
+      "comment": "",
+      "command": "type",
+      "target": "id=search_query",
+      "targets": [
+        ["id=search_query", "id"],
+        ["name=q", "name"],
+        ["css=#search_query", "css:finder"],
+        ["xpath=//input[@id='search_query']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div[2]/div/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form/input", "xpath:position"]
+      ],
+      "value": "doo"
+    }, {
+      "id": "9404ebbf-811e-4cf0-9911-8fca9889184d",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=search_query",
+      "targets": [
+        ["id=search_query", "id"],
+        ["name=q", "name"],
+        ["css=#search_query", "css:finder"],
+        ["xpath=//input[@id='search_query']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div[2]/div/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f93ebaf-e349-445f-a2e1-7950c291cc9a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7d2b9cd5-5efe-48f5-afbc-0a64a690319d",
+    "name": "RandomTextFontForSearch",
+    "commands": [{
+      "id": "2ed87d50-e27a-42d1-bb3e-6bea4938862c",
+      "comment": "",
+      "command": "open",
+      "target": "https://tesera.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bdbf427b-16c7-4bf9-a5d5-d0ce7035ecd8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "525x823",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21208e60-e7f8-4b81-9a30-5e3faa295a8d",
+      "comment": "",
+      "command": "type",
+      "target": "id=search_query",
+      "targets": [
+        ["id=search_query", "id"],
+        ["name=q", "name"],
+        ["css=#search_query", "css:finder"],
+        ["xpath=//input[@id='search_query']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div[2]/div/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form/input", "xpath:position"]
+      ],
+      "value": "DoOm"
+    }, {
+      "id": "cff4c982-a713-473c-ab5e-cfd03cfdb0dc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Doom: Настольная Игра",
+      "targets": [
+        ["linkText=Doom: Настольная Игра", "linkText"],
+        ["css=.hlder:nth-child(2) > .title > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Doom: Настольная Игра')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/game/doom-boardgame/')])[2]", "xpath:href"],
+        ["xpath=//li/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Doom: Настольная Игра')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ebb5f04-5854-46e7-b8cb-7f30242874ce",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#game_title > span",
+      "targets": [
+        ["css=#game_title > span", "css:finder"],
+        ["xpath=//h1[@id='game_title']/span", "xpath:idRelative"],
+        ["xpath=//h1/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Doom: Настольная Игра')]", "xpath:innerText"]
+      ],
+      "value": "Doom: Настольная Игра"
+    }, {
+      "id": "3aab4643-d7ee-4919-b1a0-bfa713378abc",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cb9ed540-a289-44c7-8ffd-e85ebc77eb64",
+    "name": "ListForSearch",
+    "commands": [{
+      "id": "343525c3-71a3-4bfc-a18d-e377868b34fc",
+      "comment": "",
+      "command": "open",
+      "target": "https://tesera.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c73c6892-3b8b-45c9-984f-8840e1da1faf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "525x823",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8be3da85-2439-48f6-9b7a-2da15522a597",
+      "comment": "",
+      "command": "type",
+      "target": "id=search_query",
+      "targets": [
+        ["id=search_query", "id"],
+        ["name=q", "name"],
+        ["css=#search_query", "css:finder"],
+        ["xpath=//input[@id='search_query']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div[2]/div/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form/input", "xpath:position"]
+      ],
+      "value": "doom"
+    }, {
+      "id": "99e75131-7212-49aa-9198-bf7cd8d333cd",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Doom: Настольная Игра",
+      "targets": [],
+      "value": "Doom: Настольная Игра"
+    }, {
+      "id": "5acf9377-f3b3-4b14-9015-28737154dc11",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6f5f51ea-684a-47a4-86c2-0a3f338ca68f",
+    "name": "SearchingBoxOnPage",
+    "commands": [{
+      "id": "164161fd-817d-441e-b896-1ef259a998c5",
+      "comment": "",
+      "command": "open",
+      "target": "https://tesera.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a840832a-24d8-47a8-a88f-4e1868ea20e1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "668x823",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3bd75e2f-7f6b-4a26-8504-5f023a44d0f8",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=search_query",
+      "targets": [
+        ["id=search_query", "id"],
+        ["name=q", "name"],
+        ["css=#search_query", "css:finder"],
+        ["xpath=//input[@id='search_query']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div[2]/div/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c0347e1-4d5e-43fc-bcd7-fdc591fb4eae",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2bd08aa1-e9e9-4391-9204-0a11630b67c9",
+    "name": "SearchFuncTestsTesera.ru",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ca98c28c-bc63-4daa-bb34-60357ec4a3c4", "3ee1dd8b-c0ac-4ff0-a4b2-88ede46e203a", "0a08d9d1-0f84-4622-a144-1bfa81fcb1c9", "7d2b9cd5-5efe-48f5-afbc-0a64a690319d", "cb9ed540-a289-44c7-8ffd-e85ebc77eb64", "6f5f51ea-684a-47a4-86c2-0a3f338ca68f"]
+  }],
+  "urls": ["https://tesera.ru/"],
+  "plugins": []
+}
