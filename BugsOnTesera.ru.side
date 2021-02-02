@@ -1,0 +1,1452 @@
+{
+  "id": "e5f77efd-f580-4d1e-ba16-82f761f829a9",
+  "version": "2.0",
+  "name": "BugsOnTesera.ru",
+  "url": "https://tesera.ru/lists/",
+  "tests": [{
+    "id": "eee4f365-cdba-4d02-90c0-46da0cc57a62",
+    "name": "Сохраняется старая ошибка неформата мыла при повторной попытке регистрации(мыло правильное)",
+    "commands": [{
+      "id": "6eb44f58-e6e8-440e-86f5-dfcc7970339e",
+      "comment": "",
+      "command": "open",
+      "target": "https://tesera.ru/registration/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a5417958-964b-4782-b4c1-7bad3fa84008",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "530x823",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79c59c77-3df4-4552-afb8-fe5289addde8",
+      "comment": "",
+      "command": "type",
+      "target": "id=register_login",
+      "targets": [
+        ["id=register_login", "id"],
+        ["name=register_login", "name"],
+        ["css=#register_login", "css:finder"],
+        ["xpath=//input[@id='register_login']", "xpath:attributes"],
+        ["xpath=//form[@id='register']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "zefir"
+    }, {
+      "id": "95c5646a-2d95-49f4-9bd5-527127eaf42c",
+      "comment": "",
+      "command": "type",
+      "target": "id=register_password",
+      "targets": [
+        ["id=register_password", "id"],
+        ["name=register_password", "name"],
+        ["css=#register_password", "css:finder"],
+        ["xpath=//input[@id='register_password']", "xpath:attributes"],
+        ["xpath=//form[@id='register']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "48fdd60f-4ec1-4abd-8ba6-3579a19f8599",
+      "comment": "",
+      "command": "type",
+      "target": "id=register_password2",
+      "targets": [
+        ["id=register_password2", "id"],
+        ["name=register_password2", "name"],
+        ["css=#register_password2", "css:finder"],
+        ["xpath=//input[@id='register_password2']", "xpath:attributes"],
+        ["xpath=//form[@id='register']/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "636df229-2447-4a60-916c-c2d3d0aab2aa",
+      "comment": "",
+      "command": "type",
+      "target": "id=register_email",
+      "targets": [
+        ["id=register_email", "id"],
+        ["name=register_email", "name"],
+        ["css=#register_email", "css:finder"],
+        ["xpath=//input[@id='register_email']", "xpath:attributes"],
+        ["xpath=//td[@id='email']/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": "korosta090904.gmail.com"
+    }, {
+      "id": "3b5be5e3-0e65-416b-809b-660b122fc147",
+      "comment": "",
+      "command": "click",
+      "target": "name=weare",
+      "targets": [
+        ["name=weare", "name"],
+        ["css=td > label > input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='weare']", "xpath:attributes"],
+        ["xpath=//form[@id='register']/table/tbody/tr[5]/td/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a042d781-6d30-4d77-9467-5702dd19649c",
+      "comment": "",
+      "command": "click",
+      "target": "id=register_contract",
+      "targets": [
+        ["id=register_contract", "id"],
+        ["name=register_contract", "name"],
+        ["css=#register_contract", "css:finder"],
+        ["xpath=//input[@id='register_contract']", "xpath:attributes"],
+        ["xpath=//form[@id='register']/table/tbody/tr[7]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[7]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74420e4e-5b19-47b9-a4ae-e0917eb71581",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cedaaf0-5f65-482b-a05d-1a48dd8d006a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-checkbox-border",
+      "targets": [
+        ["css=.recaptcha-checkbox-border", "css:finder"],
+        ["xpath=//span[@id='recaptcha-anchor']/div", "xpath:idRelative"],
+        ["xpath=//span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e97a9c9-3de4-4f11-af24-c615d3cd4fef",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c1a122a-1383-484a-bb41-e242b639e9ac",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=3",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "665b8259-ce65-4218-ae20-1fb524467212",
+      "comment": "",
+      "command": "click",
+      "target": "id=recaptcha-verify-button",
+      "targets": [
+        ["id=recaptcha-verify-button", "id"],
+        ["css=#recaptcha-verify-button", "css:finder"],
+        ["xpath=//button[@id='recaptcha-verify-button']", "xpath:attributes"],
+        ["xpath=//div[@id='rc-imageselect']/div[3]/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c95f3bb3-aaf9-4368-b2ee-1482ddf67c80",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "267ae23d-e33b-4ab8-9f42-4d836be9a3f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.update",
+      "targets": [
+        ["css=.update", "css:finder"],
+        ["xpath=//div[@id='container']/div[3]/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'зарегистрироваться')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e98058a-5844-4c8c-893f-d7605c8d5835",
+      "comment": "",
+      "command": "click",
+      "target": "id=register_email",
+      "targets": [
+        ["id=register_email", "id"],
+        ["name=register_email", "name"],
+        ["css=#register_email", "css:finder"],
+        ["xpath=//input[@id='register_email']", "xpath:attributes"],
+        ["xpath=//td[@id='email']/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4639315d-1629-4b70-9646-767e70ac1168",
+      "comment": "",
+      "command": "type",
+      "target": "id=register_email",
+      "targets": [
+        ["id=register_email", "id"],
+        ["name=register_email", "name"],
+        ["css=#register_email", "css:finder"],
+        ["xpath=//input[@id='register_email']", "xpath:attributes"],
+        ["xpath=//td[@id='email']/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": "korosta090904@gmail.com"
+    }, {
+      "id": "844cf73b-52b1-4648-8d3c-2e982848023c",
+      "comment": "",
+      "command": "type",
+      "target": "id=register_password",
+      "targets": [
+        ["id=register_password", "id"],
+        ["name=register_password", "name"],
+        ["css=#register_password", "css:finder"],
+        ["xpath=//input[@id='register_password']", "xpath:attributes"],
+        ["xpath=//form[@id='register']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "12"
+    }, {
+      "id": "d05dd5be-be6b-4582-a08a-4e2245cec31f",
+      "comment": "",
+      "command": "type",
+      "target": "id=register_password2",
+      "targets": [
+        ["id=register_password2", "id"],
+        ["name=register_password2", "name"],
+        ["css=#register_password2", "css:finder"],
+        ["xpath=//input[@id='register_password2']", "xpath:attributes"],
+        ["xpath=//form[@id='register']/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "12"
+    }, {
+      "id": "0035a6d1-496b-4e5b-a02b-8c7f1163dc17",
+      "comment": "",
+      "command": "click",
+      "target": "css=.update",
+      "targets": [
+        ["css=.update", "css:finder"],
+        ["xpath=//div[@id='container']/div[3]/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'зарегистрироваться')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04b218bc-b53c-4817-8bf9-38842e9830b0",
+      "comment": "",
+      "command": "click",
+      "target": "id=err-email",
+      "targets": [
+        ["id=err-email", "id"],
+        ["css=#err-email", "css:finder"],
+        ["xpath=//span[@id='err-email']", "xpath:attributes"],
+        ["xpath=//form[@id='register']/table/tbody/tr[4]/td[3]/span", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Некорректный формат E-mail адреса')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3eef9d1d-b621-48c6-9668-6b4035407efa",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(3)", "css:finder"],
+        ["xpath=//form[@id='register']/table/tbody/tr[4]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'Некорректный формат E-mail адреса')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd056f36-826b-4243-8b6c-bd804dc1f48d",
+      "comment": "сохраняется старая ошибка о неправильном формате мыла(а он правильный)",
+      "command": "assertText",
+      "target": "id=err-email",
+      "targets": [
+        ["id=err-email", "id"],
+        ["css=#err-email", "css:finder"],
+        ["xpath=//span[@id='err-email']", "xpath:attributes"],
+        ["xpath=//form[@id='register']/table/tbody/tr[4]/td[3]/span", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Некорректный формат E-mail адреса')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d086121a-d4fa-4105-a508-4a103b329302",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "907fbfd3-46ce-4272-8489-6658f14c1fb6",
+    "name": "Параметры поиска не сохраняются после просмотра выбранной страницы",
+    "commands": [{
+      "id": "d07baf5c-769d-491a-84cf-e4ad409f38ce",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86fad208-05fd-4a36-acb1-e415b503c803",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1025x820",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d5b33dd-069b-4e3a-a99f-ba7c2e5b27bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.active > span",
+      "targets": [
+        ["css=.active > span", "css:finder"],
+        ["xpath=//div[@id='container']/div/ul/li/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'игры')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f4873b7-ead7-4020-a065-9856e1d3ab07",
+      "comment": "",
+      "command": "click",
+      "target": "id=f-types",
+      "targets": [
+        ["id=f-types", "id"],
+        ["css=#f-types", "css:finder"],
+        ["xpath=//select[@id='f-types']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4f603b5-296a-4cdd-8e39-a69062f529f9",
+      "comment": "",
+      "command": "select",
+      "target": "id=f-types",
+      "targets": [],
+      "value": "label=Шахматоподобные"
+    }, {
+      "id": "f7f4cc3a-b5d5-4b36-91eb-398a52ecca92",
+      "comment": "",
+      "command": "click",
+      "target": "id=f-types",
+      "targets": [
+        ["id=f-types", "id"],
+        ["css=#f-types", "css:finder"],
+        ["xpath=//select[@id='f-types']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4591794d-9479-4fbc-8566-8394388e406d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.main",
+      "targets": [
+        ["css=.main", "css:finder"],
+        ["xpath=//div[@id='games_games']/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49cec294-168d-4ef1-b6dd-5cc6d9ac5dd8",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.main",
+      "targets": [
+        ["css=.main", "css:finder"],
+        ["xpath=//div[@id='games_games']/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a8245b0-d197-428a-a30f-0453a5c83025",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Улей Карбон",
+      "targets": [
+        ["linkText=Улей Карбон", "linkText"],
+        ["css=.feed_item:nth-child(2) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Улей Карбон')]", "xpath:link"],
+        ["xpath=//div[@id='games']/div[2]/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/game/hive-carbon')]", "xpath:href"],
+        ["xpath=//div[2]/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Улей Карбон')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "67536c4e-e67d-4dc2-85e8-20d9fd1d417f",
+      "comment": "",
+      "command": "open",
+      "target": "https://tesera.ru/games/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4928cf4-7f8e-4bd7-8e58-3336d5eed189",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "id=f-types",
+      "targets": [],
+      "value": "label=Шахматоподобные"
+    }, {
+      "id": "38cd78ec-5827-4a7a-9f8d-71e29f1b900a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ac900692-544c-4b4c-ab63-a3db0a55202a",
+    "name": "Игры.Сортировка.Рейтинг+Кол.Игроков.Возраст",
+    "commands": [{
+      "id": "c14824a0-96cc-475b-86f0-e29141858dbe",
+      "comment": "",
+      "command": "open",
+      "target": "https://tesera.ru/games/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3806f02a-aa6c-4197-9f2a-e83854971d9e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "786x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc66e022-ee7d-4e55-a3d8-ff94f734d92f",
+      "comment": "",
+      "command": "click",
+      "target": "id=f-sort",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7bad9c95-b2ca-48f3-8ee1-2c5602f0b7d3",
+      "comment": "",
+      "command": "click",
+      "target": "id=f-sort",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd5ae9af-4245-4c30-b0d8-4a9f2f90930d",
+      "comment": "",
+      "command": "type",
+      "target": "id=age-min",
+      "targets": [
+        ["id=age-min", "id"],
+        ["css=#age-min", "css:finder"],
+        ["xpath=//input[@id='age-min']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "6ee7e38f-c246-4feb-817f-5fcb9d9bb306",
+      "comment": "",
+      "command": "click",
+      "target": "id=age-min",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbeaa9fe-3a06-448a-87d4-07bdd702ffb2",
+      "comment": "",
+      "command": "type",
+      "target": "id=age-min",
+      "targets": [
+        ["id=age-min", "id"],
+        ["css=#age-min", "css:finder"],
+        ["xpath=//input[@id='age-min']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "c1ef2ea3-5b14-4862-9b4e-59f36a165dd6",
+      "comment": "",
+      "command": "click",
+      "target": "id=age-min",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f82e05b3-37aa-4425-baaa-4ae95a8f8389",
+      "comment": "",
+      "command": "type",
+      "target": "id=players-min",
+      "targets": [
+        ["id=players-min", "id"],
+        ["css=#players-min", "css:finder"],
+        ["xpath=//input[@id='players-min']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "2ae2f3fb-8274-470a-8ce3-c53c8af5bfe3",
+      "comment": "",
+      "command": "click",
+      "target": "id=players-min",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39ed03f6-4dff-4491-8fdf-6e80985e1f85",
+      "comment": "",
+      "command": "type",
+      "target": "id=players-min",
+      "targets": [
+        ["id=players-min", "id"],
+        ["css=#players-min", "css:finder"],
+        ["xpath=//input[@id='players-min']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "0b025ed1-8ed0-474e-9aac-e4b51654d2bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=players-min",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "086dd69e-0cf8-483b-a6da-b67987555bfc",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=time-max",
+      "targets": [
+        ["id=time-max", "id"],
+        ["css=#time-max", "css:finder"],
+        ["xpath=//input[@id='time-max']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[6]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[6]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dccc94c1-72e9-4fa5-b559-c4bca76e524a",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=time-max",
+      "targets": [
+        ["id=time-max", "id"],
+        ["css=#time-max", "css:finder"],
+        ["xpath=//input[@id='time-max']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[6]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[6]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ca89e9e-78ef-4a92-81a4-1d50e253c23f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.feed_item:nth-child(1) > .game_details_table div:nth-child(3) > span",
+      "targets": [
+        ["css=.feed_item:nth-child(1) > .game_details_table div:nth-child(3) > span", "css:finder"],
+        ["xpath=//div[@id='games']/div/table/tbody/tr/td/div[3]/span", "xpath:idRelative"],
+        ["xpath=//td/div[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'от 1 лет')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c557c55-1dbd-409e-b870-bd606591ff16",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.feed_item:nth-child(1) div:nth-child(2) > span",
+      "targets": [
+        ["css=.feed_item:nth-child(1) div:nth-child(2) > span", "css:finder"],
+        ["xpath=//div[@id='games']/div/table/tbody/tr/td/div[2]/span", "xpath:idRelative"],
+        ["xpath=//td/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'от 2 лет')]", "xpath:innerText"]
+      ],
+      "value": "от 2 лет"
+    }, {
+      "id": "2ee869db-5dfb-4c6f-91df-8034c872edda",
+      "comment": "количество игроков не соответствует",
+      "command": "uncheck",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "77225aa4-79a5-493b-b4ae-447ed00ed8ba",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6cb58cc9-70ca-4604-9588-82c24d29a2d4",
+    "name": "Игры.Сортировка_РейтингBGG+Тип Игры+Минуты",
+    "commands": [{
+      "id": "cce0edb7-c55a-4d68-9440-a36868c99d1f",
+      "comment": "",
+      "command": "open",
+      "target": "https://tesera.ru/games/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "22a77215-3d88-44b3-8522-4f0e5347ee29",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "786x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "262fdf5d-c483-499b-9b8d-5eca5f6f09c7",
+      "comment": "",
+      "command": "click",
+      "target": "id=f-sort",
+      "targets": [
+        ["id=f-sort", "id"],
+        ["css=#f-sort", "css:finder"],
+        ["xpath=//select[@id='f-sort']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88b81296-bf1b-46d8-8423-0f60b6e62a04",
+      "comment": "",
+      "command": "select",
+      "target": "id=f-sort",
+      "targets": [],
+      "value": "label=Рейтингу BGG"
+    }, {
+      "id": "524eb12f-f7c6-4581-847e-ff17d63afd36",
+      "comment": "",
+      "command": "click",
+      "target": "id=f-sort",
+      "targets": [
+        ["id=f-sort", "id"],
+        ["css=#f-sort", "css:finder"],
+        ["xpath=//select[@id='f-sort']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15876305-cb1f-406e-8b78-80eeedaeb4a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=f-types",
+      "targets": [
+        ["id=f-types", "id"],
+        ["css=#f-types", "css:finder"],
+        ["xpath=//select[@id='f-types']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd9cddc5-d47f-4e4e-b4c4-d92bd66ada0b",
+      "comment": "",
+      "command": "select",
+      "target": "id=f-types",
+      "targets": [],
+      "value": "label=ККИ"
+    }, {
+      "id": "c78ed175-5c1c-419a-8451-5fad44124bc9",
+      "comment": "",
+      "command": "click",
+      "target": "id=f-types",
+      "targets": [
+        ["id=f-types", "id"],
+        ["css=#f-types", "css:finder"],
+        ["xpath=//select[@id='f-types']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8f69284-4854-4635-aaf7-6da9f3ff0f64",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ins",
+      "targets": [
+        ["css=.ins", "css:finder"],
+        ["xpath=//div[@id='container']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bdb5220-8b18-444d-a589-505ac46069bf",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ins",
+      "targets": [
+        ["css=.ins", "css:finder"],
+        ["xpath=//div[@id='container']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5915955f-47b2-4065-a913-cdc8e84b6559",
+      "comment": "",
+      "command": "click",
+      "target": "id=time-min",
+      "targets": [
+        ["id=time-min", "id"],
+        ["css=#time-min", "css:finder"],
+        ["xpath=//input[@id='time-min']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "433cc1a6-a4d0-40b4-8a2c-aefa3ebaf95d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.market_filter",
+      "targets": [
+        ["css=.market_filter", "css:finder"],
+        ["xpath=//div[@id='games_games']/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5034bb3c-cdbc-42ef-a05f-19ee25f82d03",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.market_filter",
+      "targets": [
+        ["css=.market_filter", "css:finder"],
+        ["xpath=//div[@id='games_games']/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "884d0c09-9243-46f1-9f43-4659f64a7f66",
+      "comment": "",
+      "command": "type",
+      "target": "id=time-min",
+      "targets": [
+        ["id=time-min", "id"],
+        ["css=#time-min", "css:finder"],
+        ["xpath=//input[@id='time-min']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "60"
+    }, {
+      "id": "6b7d212e-8747-446b-92af-0433ebb0eb94",
+      "comment": "",
+      "command": "click",
+      "target": "id=f-types",
+      "targets": [
+        ["id=f-types", "id"],
+        ["css=#f-types", "css:finder"],
+        ["xpath=//select[@id='f-types']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59ed3343-b9b7-4cc3-bc3f-b55a0b40cc4d",
+      "comment": "",
+      "command": "click",
+      "target": "id=f-types",
+      "targets": [
+        ["id=f-types", "id"],
+        ["css=#f-types", "css:finder"],
+        ["xpath=//select[@id='f-types']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a76a0d2-5dde-4156-af6c-879aca65ebb3",
+      "comment": "",
+      "command": "click",
+      "target": "id=time-min",
+      "targets": [
+        ["id=time-min", "id"],
+        ["css=#time-min", "css:finder"],
+        ["xpath=//input[@id='time-min']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e4d4010-7f48-402c-b709-c3cf8243f375",
+      "comment": "",
+      "command": "click",
+      "target": "id=f-sort",
+      "targets": [
+        ["id=f-sort", "id"],
+        ["css=#f-sort", "css:finder"],
+        ["xpath=//select[@id='f-sort']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c1a7e63-0283-4e80-8db9-798b7c6df29e",
+      "comment": "",
+      "command": "click",
+      "target": "id=f-sort",
+      "targets": [
+        ["id=f-sort", "id"],
+        ["css=#f-sort", "css:finder"],
+        ["xpath=//select[@id='f-sort']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6bdceb31-cfff-40d0-9075-66394ce4cd5c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.feed_item:nth-child(1) .r_first",
+      "targets": [
+        ["css=.feed_item:nth-child(1) .r_first", "css:finder"],
+        ["xpath=//div[@id='games']/div/h2/div[2]", "xpath:idRelative"],
+        ["xpath=//h2/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eeb11e83-9817-4b37-a78a-f9b602d4f19b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.feed_item:nth-child(1) .r_first > span",
+      "targets": [
+        ["css=.feed_item:nth-child(1) .r_first > span", "css:finder"],
+        ["xpath=//div[@id='games']/div/h2/div[2]/span", "xpath:idRelative"],
+        ["xpath=//h2/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'7.04')]", "xpath:innerText"]
+      ],
+      "value": "7.04"
+    }, {
+      "id": "f099a703-8b69-47b8-91e0-7f0f3088a043",
+      "comment": "",
+      "command": "click",
+      "target": "css=.feed_item:nth-child(2) .r_first > span",
+      "targets": [
+        ["css=.feed_item:nth-child(2) .r_first > span", "css:finder"],
+        ["xpath=//div[@id='games']/div[2]/h2/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/h2/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'6.92')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f800a73a-a8f0-40a2-a05a-872594e078a0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.feed_item:nth-child(2) .r_first > span",
+      "targets": [
+        ["css=.feed_item:nth-child(2) .r_first > span", "css:finder"],
+        ["xpath=//div[@id='games']/div[2]/h2/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/h2/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'6.92')]", "xpath:innerText"]
+      ],
+      "value": "6.92"
+    }, {
+      "id": "c3c40cd5-1814-430d-be3a-8fc23658856f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.feed_item:nth-child(1) > .game_details_table div:nth-child(5)",
+      "targets": [
+        ["css=.feed_item:nth-child(1) > .game_details_table div:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='games']/div/table/tbody/tr/td/div[5]", "xpath:idRelative"],
+        ["xpath=//td/div[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d161d9af-9805-413b-84ab-f2b6b209a055",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.feed_item:nth-child(1) > .game_details_table div:nth-child(5) > span",
+      "targets": [
+        ["css=.feed_item:nth-child(1) > .game_details_table div:nth-child(5) > span", "css:finder"],
+        ["xpath=//div[@id='games']/div/table/tbody/tr/td/div[5]/span", "xpath:idRelative"],
+        ["xpath=//div[5]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'80 - 120 мин')]", "xpath:innerText"]
+      ],
+      "value": "80 - 120 мин"
+    }, {
+      "id": "c3e9d245-0812-46a8-a835-b09142c02ae3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.feed_item:nth-child(2) > .game_details_table div:nth-child(4) > span",
+      "targets": [
+        ["css=.feed_item:nth-child(2) > .game_details_table div:nth-child(4) > span", "css:finder"],
+        ["xpath=//div[@id='games']/div[2]/table/tbody/tr/td/div[4]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/table/tbody/tr/td/div[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'60 - 90 мин')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "133b0832-260f-4e91-b001-16ee631d3750",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.feed_item:nth-child(2) > .game_details_table div:nth-child(4) > span",
+      "targets": [
+        ["css=.feed_item:nth-child(2) > .game_details_table div:nth-child(4) > span", "css:finder"],
+        ["xpath=//div[@id='games']/div[2]/table/tbody/tr/td/div[4]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/table/tbody/tr/td/div[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'60 - 90 мин')]", "xpath:innerText"]
+      ],
+      "value": "60 - 90 мин"
+    }]
+  }, {
+    "id": "52343f12-0d1a-4774-9da9-d7195aee0a49",
+    "name": "Игры.Сортировка.Много игроков(66)",
+    "commands": [{
+      "id": "5cd992de-5ddc-45b8-b5cf-b5f9c55c5e7f",
+      "comment": "",
+      "command": "open",
+      "target": "https://tesera.ru/games/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a42f801-9729-48ac-9548-a7536a70f2c2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "786x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e8ebcb6c-b44a-4383-870b-b5164509be08",
+      "comment": "",
+      "command": "click",
+      "target": "id=f-sort",
+      "targets": [
+        ["id=f-sort", "id"],
+        ["css=#f-sort", "css:finder"],
+        ["xpath=//select[@id='f-sort']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25a20d23-3414-4a9f-b3bb-5584412c5a5d",
+      "comment": "",
+      "command": "click",
+      "target": "id=f-sort",
+      "targets": [
+        ["id=f-sort", "id"],
+        ["css=#f-sort", "css:finder"],
+        ["xpath=//select[@id='f-sort']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c868c680-155d-4ec7-8f49-01e5c982ca1d",
+      "comment": "",
+      "command": "click",
+      "target": "id=players-min",
+      "targets": [
+        ["id=players-min", "id"],
+        ["css=#players-min", "css:finder"],
+        ["xpath=//input[@id='players-min']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "399b46f5-c8fa-47eb-97af-0aaed60e364c",
+      "comment": "",
+      "command": "type",
+      "target": "id=players-min",
+      "targets": [
+        ["id=players-min", "id"],
+        ["css=#players-min", "css:finder"],
+        ["xpath=//input[@id='players-min']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "66"
+    }, {
+      "id": "6470feec-0751-4ffc-a5a2-b6b28763ff65",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main",
+      "targets": [
+        ["css=.main", "css:finder"],
+        ["xpath=//div[@id='games_games']/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c22f3bd8-7c59-400d-bf64-cf489cb10675",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.market_empty",
+      "targets": [
+        ["css=.market_empty", "css:finder"],
+        ["xpath=//div[@id='games']/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Игры не найдены')]", "xpath:innerText"]
+      ],
+      "value": "Игры не найдены"
+    }, {
+      "id": "527f95cb-0f32-4719-9706-a2e421c4a704",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fcc52513-9e49-4f46-9ff6-173e68635cdb",
+    "name": "Игры.Сортировка.Возраст от 99",
+    "commands": [{
+      "id": "592718cf-8d7d-4556-9a56-322fdc965f26",
+      "comment": "",
+      "command": "open",
+      "target": "https://tesera.ru/games/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d8c8e48-cd5a-4715-85a7-71165960fe9c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "786x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c317cf81-24de-4429-89a5-f9172ccd20fc",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.market_filter > div:nth-child(3)",
+      "targets": [
+        ["css=.market_filter > div:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf750b20-3571-44c8-8737-9d1a369fd034",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.market_filter > div:nth-child(3)",
+      "targets": [
+        ["css=.market_filter > div:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f8b6ce5-295c-4cc6-82e2-657eddffb541",
+      "comment": "",
+      "command": "click",
+      "target": "id=age-min",
+      "targets": [
+        ["id=age-min", "id"],
+        ["css=#age-min", "css:finder"],
+        ["xpath=//input[@id='age-min']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb3dd076-757d-41e1-a7c9-df16b172463c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=f-settings",
+      "targets": [
+        ["id=f-settings", "id"],
+        ["css=#f-settings", "css:finder"],
+        ["xpath=//select[@id='f-settings']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b60a62e-e93d-487a-9abf-8092579c5c7c",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=f-settings",
+      "targets": [
+        ["id=f-settings", "id"],
+        ["css=#f-settings", "css:finder"],
+        ["xpath=//select[@id='f-settings']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bc14da1-17d8-4eb7-a1dd-b2f106ecc7b0",
+      "comment": "",
+      "command": "type",
+      "target": "id=age-min",
+      "targets": [
+        ["id=age-min", "id"],
+        ["css=#age-min", "css:finder"],
+        ["xpath=//input[@id='age-min']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "99"
+    }, {
+      "id": "7807d510-c98f-4c7a-baad-8a2b619365eb",
+      "comment": "",
+      "command": "click",
+      "target": "id=f-sort",
+      "targets": [
+        ["id=f-sort", "id"],
+        ["css=#f-sort", "css:finder"],
+        ["xpath=//select[@id='f-sort']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47069091-c85a-46a5-a8f5-010cc19eb17c",
+      "comment": "",
+      "command": "select",
+      "target": "id=f-sort",
+      "targets": [],
+      "value": "label=Обсуждаемости"
+    }, {
+      "id": "84b58b79-ecaa-4a33-9077-2eeb52ddb36c",
+      "comment": "",
+      "command": "click",
+      "target": "id=f-sort",
+      "targets": [
+        ["id=f-sort", "id"],
+        ["css=#f-sort", "css:finder"],
+        ["xpath=//select[@id='f-sort']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "748d6a5e-01b6-48cf-b059-ffc136d10413",
+      "comment": "",
+      "command": "click",
+      "target": "id=f-sort",
+      "targets": [
+        ["id=f-sort", "id"],
+        ["css=#f-sort", "css:finder"],
+        ["xpath=//select[@id='f-sort']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b81bd378-81b0-4b55-9143-98b0b7fb27a8",
+      "comment": "",
+      "command": "select",
+      "target": "id=f-sort",
+      "targets": [],
+      "value": "label=Рейтингу Тесеры"
+    }, {
+      "id": "70401a22-ade0-434f-94b2-99e775956962",
+      "comment": "",
+      "command": "click",
+      "target": "id=f-sort",
+      "targets": [
+        ["id=f-sort", "id"],
+        ["css=#f-sort", "css:finder"],
+        ["xpath=//select[@id='f-sort']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1558bdb4-e840-464f-9a8c-15b4c83bd4a1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.market_filter > div:nth-child(3)",
+      "targets": [
+        ["css=.market_filter > div:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "461d0722-b12b-468b-9b94-f9a71f7e8164",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.market_filter > div:nth-child(3)",
+      "targets": [
+        ["css=.market_filter > div:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "338e3083-298b-46fa-8b5a-f5e418ebe1e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.feed_item:nth-child(1) .game_details",
+      "targets": [
+        ["css=.feed_item:nth-child(1) .game_details", "css:finder"],
+        ["xpath=//div[@id='games']/div/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'1 - 41 - 2от 14 лет30 мин120 - 240 мин')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c21a9f6-3bed-4ceb-84cd-94d90e5e5cab",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.feed_item:nth-child(1) > .game_details_table div:nth-child(3) > span",
+      "targets": [
+        ["css=.feed_item:nth-child(1) > .game_details_table div:nth-child(3) > span", "css:finder"],
+        ["xpath=//div[@id='games']/div/table/tbody/tr/td/div[3]/span", "xpath:idRelative"],
+        ["xpath=//td/div[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'от 14 лет')]", "xpath:innerText"]
+      ],
+      "value": "от 99 лет"
+    }, {
+      "id": "69f47139-bc4c-4d1e-8121-4065358c9f17",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1bbcdc7d-1a2c-4171-b137-37d35a57906f",
+    "name": "Игры.Сортировка. Время( 300мин)",
+    "commands": [{
+      "id": "a028aeec-7150-4621-8b6d-d0df8909e9c7",
+      "comment": "",
+      "command": "open",
+      "target": "https://tesera.ru/games/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d830dbc-0829-4ddf-ab58-19aabedd3366",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "786x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfd7c65f-671a-4bb7-8a08-3ef274641741",
+      "comment": "",
+      "command": "click",
+      "target": "id=f-sort",
+      "targets": [
+        ["id=f-sort", "id"],
+        ["css=#f-sort", "css:finder"],
+        ["xpath=//select[@id='f-sort']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4665bdc2-9d66-49c7-8e64-4c6cfc7baa71",
+      "comment": "",
+      "command": "click",
+      "target": "id=f-sort",
+      "targets": [
+        ["id=f-sort", "id"],
+        ["css=#f-sort", "css:finder"],
+        ["xpath=//select[@id='f-sort']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c35ee25-44a9-4db5-ad44-df1819d79603",
+      "comment": "",
+      "command": "click",
+      "target": "id=time-min",
+      "targets": [
+        ["id=time-min", "id"],
+        ["css=#time-min", "css:finder"],
+        ["xpath=//input[@id='time-min']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad617805-a41f-45dc-9d4e-685e3f5705f7",
+      "comment": "",
+      "command": "type",
+      "target": "id=time-min",
+      "targets": [
+        ["id=time-min", "id"],
+        ["css=#time-min", "css:finder"],
+        ["xpath=//input[@id='time-min']", "xpath:attributes"],
+        ["xpath=//div[@id='games_games']/div/div/div/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "300"
+    }, {
+      "id": "2d4c3fb7-7a3c-4c07-ad09-622c9fd25d26",
+      "comment": "",
+      "command": "click",
+      "target": "css=.feed_item:nth-child(1) > .game_details_table div:nth-child(5) > span",
+      "targets": [
+        ["css=.feed_item:nth-child(1) > .game_details_table div:nth-child(5) > span", "css:finder"],
+        ["xpath=//div[@id='games']/div/table/tbody/tr/td/div[5]/span", "xpath:idRelative"],
+        ["xpath=//div[5]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'360 - 480 мин')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb4f29fd-0856-40e9-90d6-4447c066bfa5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.feed_item:nth-child(1) > .game_details_table div:nth-child(5) > span",
+      "targets": [
+        ["css=.feed_item:nth-child(1) > .game_details_table div:nth-child(5) > span", "css:finder"],
+        ["xpath=//div[@id='games']/div/table/tbody/tr/td/div[5]/span", "xpath:idRelative"],
+        ["xpath=//div[5]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'360 - 480 мин')]", "xpath:innerText"]
+      ],
+      "value": "360 - 480 мин"
+    }, {
+      "id": "84465d8b-82ef-4f9d-af8f-5e66ab09663a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.feed_item:nth-child(2) > .game_details_table div:nth-child(5) > span",
+      "targets": [
+        ["css=.feed_item:nth-child(2) > .game_details_table div:nth-child(5) > span", "css:finder"],
+        ["xpath=//div[@id='games']/div[2]/table/tbody/tr/td/div[5]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/table/tbody/tr/td/div[5]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "14333114-913c-4451-aca3-58ebbf1d839b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.feed_item:nth-child(2) > .game_details_table div:nth-child(5) > span",
+      "targets": [
+        ["css=.feed_item:nth-child(2) > .game_details_table div:nth-child(5) > span", "css:finder"],
+        ["xpath=//div[@id='games']/div[2]/table/tbody/tr/td/div[5]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/table/tbody/tr/td/div[5]/span", "xpath:position"]
+      ],
+      "value": "360 - 480 мин"
+    }, {
+      "id": "d7087f04-c3e1-40ea-b1c7-8f33e81f3d74",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f0f17dc3-31cc-435d-b704-6f33d9328a43",
+    "name": "Списики.Сортировка.Дата",
+    "commands": [{
+      "id": "0e9e603d-93a1-4142-b9f7-80021f321ce7",
+      "comment": "",
+      "command": "open",
+      "target": "https://tesera.ru/lists/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b0aa69ca-0593-472b-b8bd-f796e99ac6c6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "786x827",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8009520a-9501-4ded-959d-92b8a329fed2",
+      "comment": "",
+      "command": "click",
+      "target": "id=f-sort",
+      "targets": [
+        ["id=f-sort", "id"],
+        ["css=#f-sort", "css:finder"],
+        ["xpath=//select[@id='f-sort']", "xpath:attributes"],
+        ["xpath=//div[@id='lists_lists']/div/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cfaf3e3-ae53-4c0d-baf5-5a2eec36fa44",
+      "comment": "",
+      "command": "click",
+      "target": "id=f-sort",
+      "targets": [
+        ["id=f-sort", "id"],
+        ["css=#f-sort", "css:finder"],
+        ["xpath=//select[@id='f-sort']", "xpath:attributes"],
+        ["xpath=//div[@id='lists_lists']/div/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30ff1c37-0b41-404d-aecc-3b5148ff39cd",
+      "comment": "",
+      "command": "executeScript",
+      "target": " css=.feed_item:nth-child(1) > .diary_date",
+      "targets": [],
+      "value": "date1"
+    }, {
+      "id": "facaf6be-b2a8-44f6-8776-799aa912d718",
+      "comment": "",
+      "command": "executeScript",
+      "target": "css=.feed_item:nth-child(2) > .diary_date",
+      "targets": [],
+      "value": "date2"
+    }, {
+      "id": "79bb89f9-0f4a-4256-92c7-9528de2c7ade",
+      "comment": "",
+      "command": "if",
+      "target": "date1 != date2",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "201c93bc-338d-4801-b8a2-5193ba66d53f",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0381ffb9-29a3-47a0-b0f2-f1839194878d",
+    "name": "Регистрация",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["eee4f365-cdba-4d02-90c0-46da0cc57a62"]
+  }, {
+    "id": "1180e1ce-bb8a-4a64-8fc2-9bd3fee27292",
+    "name": "Поисковик",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["907fbfd3-46ce-4272-8489-6658f14c1fb6"]
+  }, {
+    "id": "501e499b-5060-49c9-bbce-29597694e01f",
+    "name": "Игры",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ac900692-544c-4b4c-ab63-a3db0a55202a", "6cb58cc9-70ca-4604-9588-82c24d29a2d4", "52343f12-0d1a-4774-9da9-d7195aee0a49", "fcc52513-9e49-4f46-9ff6-173e68635cdb", "1bbcdc7d-1a2c-4171-b137-37d35a57906f", "907fbfd3-46ce-4272-8489-6658f14c1fb6"]
+  }, {
+    "id": "2f3c2349-18b7-4890-9a7f-13fed42049cb",
+    "name": "Списки",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }, {
+    "id": "d636300f-e75e-4c7c-9354-e840742ba6df",
+    "name": "Новости",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }, {
+    "id": "2870eb39-e422-44ef-b721-341df2d92580",
+    "name": "Статьи",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://tesera.ru/registration/", "https://tesera.ru/", "https://tesera.ru/games/", "https://tesera.ru/lists/"],
+  "plugins": []
+}
